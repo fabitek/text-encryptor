@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/Logo1x.png" alt="logoAlura" class="logoAlura">
+    </header>
+    <main>
+        <section class="section1">
+            <div class="text-container">
+                <textarea class="text-area" placeholder="Ingrese texto" required></textarea>
+            </div>
+            <div class="info">
+                <img alt="info" src="./assets/img/Exclamation.png"><p class="info"> Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="buttons">
+                <button class="btn-encrypt" id="btn-encrypt" onclick="btnEncrypt()">Encriptar</button>
+                <button class="btn-decrypt" id="btn-decrypt" onclick="btnDecrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="doll-container">
+                <img src="/assets/img/doll.png" alt="doll">
+            </div>
+            <div class="paragraph-container">
+                <h3>Ningún mensaje fue<br>encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o<br>desencriptar</p>
+            </div>
+            <div class="result-container">
+                <textarea class="message" placeholder="Encryptación de texto..." required></textarea>
+            </div>
+            <div class="copy-container">
+                <input class="btn-copy" type="button" onclick="btnCopy()" value="Copiar">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-container">
+            <a href="https://www.linkedin.com/in/fabiantellez" target="_blank" class="logo">
+                <img src="/assets/img/icons8-linkedin-50 (1).png" height="25" width="25" alt="Logo de LinkedIn" width="50" height="50">
+            </a>
+            <a href="https://github.com/fabitek" target="_blank" class="logo">
+                <img src="/assets/img/icons8-github-50 (1).png" height="25" width="25" alt="Logo de GitHub" width="50" height="50">
+            </a>
+        </div>
+        <div class="footer">
+            <p class="copyright">© 2024 @Fabitek - Encriptador de Texto diseñado y desarrollado por: Fabián Téllez.</p>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+
+</html>
